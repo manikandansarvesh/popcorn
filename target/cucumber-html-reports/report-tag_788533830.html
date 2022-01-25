@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>mobile</td>
-      <td>25 Jan 2022, 09:44</td>
+      <td>25 Jan 2022, 13:28</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@InvalidScenario</td>
-          <td      class="passed"    >11</td>
+          <td      class="passed"    >10</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">11</td>
+          <td class="total">10</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1243276210">1.243</td>
+          <td class="duration" data-value="1074706707">1.074</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -181,7 +181,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.243</span>
+  <span class="lead-duration duration">1.074</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -224,7 +224,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url 'http://api.intigral-ott.net/popcorn-api-rs-7.9.17/v1/promotions'</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -305,7 +305,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">header Content-Type = 'application/json'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -332,7 +332,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">1.182</span>
+  <span class="lead-duration duration">1.016</span>
 
 </div>
 
@@ -350,7 +350,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>09:44:28.872 request:
+        <pre>13:28:24.539 request:
 1 &gt; GET http://api.intigral-ott.net/popcorn-api-rs-7.9.17/v1/promotions?apikey=webB2BGDMSTGExy0sVDlZMzNDdUyZ_InvalidKey
 1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json
@@ -360,23 +360,23 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-09:44:29.457 response time in milliseconds: 581
+13:28:25.070 response time in milliseconds: 516
 1 &lt; 403
-1 &lt; Date: Tue, 25 Jan 2022 04:14:29 GMT
+1 &lt; Date: Tue, 25 Jan 2022 07:58:25 GMT
 1 &lt; Content-Type: application/json;charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Server: Apache-Coyote/1.1
-1 &lt; _ppcExecutionTimeMilliSeconds: 3.0
-1 &lt; _ppcExecutionTimeSeconds: 0.003
-1 &lt; _ppcRequestId: eb564f96-ce7c-489c-9052-9e4eb46f7f39
-1 &lt; _ppcRequestTime: 2022-01-25 04:14:29.579
-1 &lt; _ppcResponseTime: 2022-01-25 04:14:29.582
+1 &lt; _ppcExecutionTimeMilliSeconds: 1.0
+1 &lt; _ppcExecutionTimeSeconds: 0.001
+1 &lt; _ppcRequestId: 36176b72-bc14-49d7-b61c-232a6d5122f8
+1 &lt; _ppcRequestTime: 2022-01-25 07:58:25.062
+1 &lt; _ppcResponseTime: 2022-01-25 07:58:25.063
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Allow-Headers: *,encPw,token,epochMs,requestId,Content-Type,Authorization,identityToken,Correlation-Id,X-Requested-With,tpaySessionToken,Access-Control-Allow-Origin,Access-Control-Allow-Headers,ssl,noAuth,signature,timestamp,encPassword,username,password
 1 &lt; Access-Control-Allow-Methods: GET,PUT,DELETE, POST,OPTIONS
 1 &lt; Access-Control-Allow-Origin: *
-{&quot;error&quot;:{&quot;message&quot;:&quot;invalid api key&quot;,&quot;code&quot;:&quot;8001&quot;,&quot;requestId&quot;:&quot;eb564f96-ce7c-489c-9052-9e4eb46f7f39&quot;}}
+{&quot;error&quot;:{&quot;message&quot;:&quot;invalid api key&quot;,&quot;code&quot;:&quot;8001&quot;,&quot;requestId&quot;:&quot;36176b72-bc14-49d7-b61c-232a6d5122f8&quot;}}
 </pre>
       </div>
     </div>
@@ -419,56 +419,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.019</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>09:44:29.510 [print] {
-  &quot;error&quot;: {
-    &quot;message&quot;: &quot;invalid api key&quot;,
-    &quot;code&quot;: &quot;8001&quot;,
-    &quot;requestId&quot;: &quot;eb564f96-ce7c-489c-9052-9e4eb46f7f39&quot;
-  }
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.error.message == 'invalid api key'</span>
 
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.040</span>
 
 </div>
 
@@ -495,7 +450,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.error.code == '8001'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -522,7 +477,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestId = response.error.requestId</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -549,7 +504,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print requestId</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -563,11 +518,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>09:44:29.545 [print] eb564f96-ce7c-489c-9052-9e4eb46f7f39 
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>13:28:25.174 [print] 36176b72-bc14-49d7-b61c-232a6d5122f8 
 </pre>
       </div>
     </div>

@@ -5,7 +5,6 @@ Feature: retrieve the promotion info
   @fetchPromoInfo
   Scenario:
     Given url 'http://api.intigral-ott.net/popcorn-api-rs-7.9.17/v1/promotions'
-
     And param apikey = 'webB2BGDMSTGExy0sVDlZMzNDdUyZ'
     And header Accept = 'application/json'
     And header Content-Type = 'application/json'
@@ -41,6 +40,24 @@ Feature: retrieve the promotion info
   }
      """
     And match response.promotions[0].localizedTexts == localizedTextsValue
+    * def localizedTextResponse = response.promotions[0].localizedTexts
+    * def array = [{ar: 'Sabe movie'},{ar: ''},{ar: ''}]
+    Then match each array contains
+    """
+    {
+          ar : '#string'
+       }
+    """
+    And match response.promotions[*].localizedTexts.ar[0] contains '#string'
+    And match response.promotions[*].localizedTexts.en[0] contains '#string'
+    And match response.promotions[*].localizedTexts[*] contains []
+    * def programType = 'movie'
+    * def programType1 = 'episode'
+    * def list = ['episode','movie']
+    * def data = karate.mapWithKey(list, 'programType')
+    * match data == [{ programType: 'episode' }, { programType: 'movie' }]
+    And match response.promotions[0].properties[0].programType == programType
+    And match response.promotions[4].properties[0].programType == programType1
 
 
   @InvalidScenario

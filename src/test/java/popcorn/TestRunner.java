@@ -31,7 +31,7 @@ public class TestRunner {
 
         String karateOutputPath = "target/surefire-reports";
 
-        Results results = Runner.path("classpath:popcorn").tags("@InvalidScenario").outputCucumberJson(true).parallel( 1);
+        Results results = Runner.path("classpath:popcorn").tags("@fetchPromoInfo").outputCucumberJson(true).parallel( 1);
         generateReport(results.getReportDir());
         assertEquals(results.getErrorMessages(), 0, results.getFailCount());
     }
