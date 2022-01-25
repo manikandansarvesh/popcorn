@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @fetchPromoInfo</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>mobile</td>
+      <td>25 Jan 2022, 16:19</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@fetchPromoInfo</td>
+          <td      class="passed"    >33</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">33</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1831592207">1.831</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4252733085.html">popcorn/validScenario.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2775325954.html">@fetchPromoInfo</a>
+</div>
+
+
+  <span class="lead-duration duration">1.831</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'http://api.intigral-ott.net/popcorn-api-rs-7.9.17/v1/promotions'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param apikey = 'webB2BGDMSTGExy0sVDlZMzNDdUyZ'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'webB2BGDMSTGExy0sVDlZMzNDdUyZ'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.709</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:19:04.567 request:
+1 &gt; GET http://api.intigral-ott.net/popcorn-api-rs-7.9.17/v1/promotions?apikey=webB2BGDMSTGExy0sVDlZMzNDdUyZ
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: webB2BGDMSTGExy0sVDlZMzNDdUyZ
+1 &gt; Host: api.intigral-ott.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:19:05.847 response time in milliseconds: 1261
+1 &lt; 200
+1 &lt; Date: Tue, 25 Jan 2022 10:49:05 GMT
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache-Coyote/1.1
+1 &lt; _ppcExecutionTimeMilliSeconds: 861.0
+1 &lt; _ppcExecutionTimeSeconds: 0.861
+1 &lt; _ppcRequestId: b7d5f686-43a3-4948-9530-c7011f3f3b01
+1 &lt; _ppcRequestTime: 2022-01-25 10:49:04.970
+1 &lt; _ppcResponseTime: 2022-01-25 10:49:05.831
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: *,encPw,token,epochMs,requestId,Content-Type,Authorization,identityToken,Correlation-Id,X-Requested-With,tpaySessionToken,Access-Control-Allow-Origin,Access-Control-Allow-Headers,ssl,noAuth,signature,timestamp,encPassword,username,password
+1 &lt; Access-Control-Allow-Methods: GET,PUT,DELETE, POST,OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+{&quot;promotions&quot;:[{&quot;promotionId&quot;:&quot;sabe movie for b2b&quot;,&quot;orderId&quot;:32,&quot;promoArea&quot;:[&quot;home:main&quot;],&quot;promoType&quot;:&quot;VOD&quot;,&quot;showPrice&quot;:false,&quot;showText&quot;:false,&quot;localizedTexts&quot;:{&quot;ar&quot;:[&quot;Sabe movie&quot;,&quot; &quot;,&quot; &quot;],&quot;en&quot;:[&quot;Sabe movie&quot;,&quot; &quot;,&quot; &quot;]},&quot;properties&quot;:[{&quot;year&quot;:&quot;2019&quot;,&quot;programType&quot;:&quot;movie&quot;,&quot;currency&quot;:&quot;SAR&quot;,&quot;programAvailabilityId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/192005160233&quot;,&quot;rating&quot;:{&quot;scheme&quot;:&quot;urn:www.citc.gov.sa&quot;,&quot;rating&quot;:&quot;15&quot;},&quot;categories&quot;:[&quot;GADM&quot;,&quot;Movies&quot;],&quot;genre&quot;:[&quot;Comedy&quot;],&quot;programDescription&quot;:{&quot;ar&quot;:&quot;&#1601;&#1610;&#1604;&#1605; &#1603;&#1608;&#1605;&#1610;&#1583;&#1610; &#1575;&#1580;&#1578;&#1605;&#1575;&#1593;&#1610;. &#1610;&#1593;&#1602;&#1583; &#1593;&#1605;&#1585; &#1608;&#1606;&#1587;&#1605;&#1577; &#1602;&#1585;&#1575;&#1606;&#1607;&#1605;&#1575; &#1585;&#1594;&#1605; &#1575;&#1587;&#1578;&#1606;&#1603;&#1575;&#1585; &#1593;&#1575;&#1574;&#1604;&#1578;&#1610;&#1607;&#1605;&#1575;&#1548; &#1604;&#1603;&#1606; &#1578;&#1602;&#1593; &#1575;&#1604;&#1605;&#1571;&#1587;&#1575;&#1577; &#1581;&#1610;&#1606; &#1610;&#1607;&#1575;&#1580;&#1605; &#1605;&#1587;&#1604;&#1581;&#1608;&#1606; &#1575;&#1604;&#1593;&#1585;&#1608;&#1587;&#1614;&#1610;&#1606;. &#1607;&#1604; &#1610;&#1605;&#1603;&#1606; &#1604;&#1604;&#1586;&#1608;&#1580;&#1610;&#1606; &#1575;&#1604;&#1582;&#1585;&#1608;&#1580; &#1587;&#1575;&#1604;&#1616;&#1605;&#1614;&#1610;&#1606; &#1605;&#1606; &#1575;&#1604;&#1589;&#1583;&#1605;&#1577;&#1567; &#1571;&#1605; &#1571;&#1606; &#1575;&#1585;&#1578;&#1576;&#1575;&#1591;&#1607;&#1605;&#1575; &#1605;&#1581;&#1603;&#1608;&#1605; &#1593;&#1604;&#1610;&#1607; &#1576;&#1575;&#1604;&#1582;&#1610;&#1576;&#1577; &#1608;&#1575;&#1604;&#1601;&#1588;&#1604;&#1567;&quot;,&quot;en&quot;:&quot;Comedy. Despite the disapproval of their families, Omar and Nesma tie the knot but tragedy strikes when armed assailants attack the newlyweds. Can the couple emerge unscathed from the trauma or is their union doomed?&quot;},&quot;duration&quot;:&quot;5382&quot;}],&quot;images&quot;:[{&quot;id&quot;:&quot;280x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1618394942.jpeg&quot;,&quot;width&quot;:280,&quot;height&quot;:392},{&quot;id&quot;:&quot;1024x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1618394942.jpeg&quot;,&quot;width&quot;:1024,&quot;height&quot;:392},{&quot;id&quot;:&quot;640x487&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1618394942.jpeg&quot;,&quot;width&quot;:640,&quot;height&quot;:487},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1618394942.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1618394942.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1618394942.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1618394942.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;1272x440&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1618394942.png&quot;,&quot;width&quot;:1272,&quot;height&quot;:440},{&quot;id&quot;:&quot;1272x440&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1618394943.png&quot;,&quot;width&quot;:1272,&quot;height&quot;:440}]},{&quot;promotionId&quot;:&quot;Bharti Rewind b2b&quot;,&quot;orderId&quot;:50,&quot;promoArea&quot;:[&quot;home:main&quot;],&quot;promoType&quot;:&quot;REWIND&quot;,&quot;showPrice&quot;:true,&quot;showText&quot;:true,&quot;localizedTexts&quot;:{&quot;ar&quot;:[&quot;Bharti Rewind b2b2c&quot;,&quot; &quot;],&quot;en&quot;:[&quot;Bharti Rewind b2b2c&quot;,&quot; &quot;]},&quot;properties&quot;:[{&quot;channelId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Channel/97776168178&quot;,&quot;stationId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Station/97775656356&quot;,&quot;price&quot;:&quot;Free&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;programAvailabilityId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/103781928279&quot;,&quot;rating&quot;:{&quot;scheme&quot;:&quot;urn:www.citc.gov.sa&quot;,&quot;rating&quot;:&quot;family&quot;},&quot;startTime&quot;:1643014140000,&quot;endTime&quot;:1643015640000,&quot;listingId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Listing/257112103956&quot;,&quot;channelNumber&quot;:171,&quot;channelTitle&quot;:&quot;La3ab Wa Jad&quot;,&quot;programTitle&quot;:{&quot;ar&quot;:&quot;&#1605;&#1575;&#1585;&#1603;&#1608; &#1576;&#1608;&#1604;&#1608;&quot;,&quot;en&quot;:&quot;The Travels of the Young Marco Polo&quot;},&quot;type&quot;:&quot;LINEAR&quot;}],&quot;images&quot;:[{&quot;id&quot;:&quot;280x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626078725.jpeg&quot;,&quot;width&quot;:280,&quot;height&quot;:392},{&quot;id&quot;:&quot;1024x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626078725.jpeg&quot;,&quot;width&quot;:1024,&quot;height&quot;:392},{&quot;id&quot;:&quot;640x487&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626078725.jpeg&quot;,&quot;width&quot;:640,&quot;height&quot;:487},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626078725.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626078725.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626078725.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626078725.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626078725.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626078725.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586}]},{&quot;promotionId&quot;:&quot;Bharti subscription b2b&quot;,&quot;orderId&quot;:52,&quot;promoArea&quot;:[&quot;home:main&quot;],&quot;promoType&quot;:&quot;SUBSCRIPTION&quot;,&quot;showPrice&quot;:true,&quot;showText&quot;:true,&quot;localizedTexts&quot;:{&quot;ar&quot;:[&quot;Bharti subscription b2b2c&quot;,&quot; &quot;],&quot;en&quot;:[&quot;Bharti subscription b2b2c&quot;,&quot; &quot;]},&quot;properties&quot;:[{&quot;price&quot;:&quot;28.00&quot;,&quot;currency&quot;:&quot;SAR&quot;,&quot;subscriptionGuid&quot;:&quot;BASE_SUBSCRIPTION&quot;}],&quot;images&quot;:[{&quot;id&quot;:&quot;280x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626078795.jpeg&quot;,&quot;width&quot;:280,&quot;height&quot;:392},{&quot;id&quot;:&quot;1024x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626078795.jpeg&quot;,&quot;width&quot;:1024,&quot;height&quot;:392},{&quot;id&quot;:&quot;640x487&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626078795.jpeg&quot;,&quot;width&quot;:640,&quot;height&quot;:487},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626078795.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626078795.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626078795.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626078795.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626078795.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626078795.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586}]},{&quot;promotionId&quot;:&quot;Bharti channel b2b&quot;,&quot;orderId&quot;:53,&quot;promoArea&quot;:[&quot;home:main&quot;],&quot;promoType&quot;:&quot;CHANNEL&quot;,&quot;showPrice&quot;:true,&quot;showText&quot;:true,&quot;localizedTexts&quot;:{&quot;ar&quot;:[&quot;Bharti Arabic b2b&quot;,&quot; &quot;,&quot; &quot;],&quot;en&quot;:[&quot;Bharti Arabic b2b2c&quot;,&quot; &quot;]},&quot;properties&quot;:[{&quot;channelId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Channel/132941864273&quot;,&quot;guid&quot;:&quot;JAW1_KSA&quot;,&quot;updated&quot;:1632895945000,&quot;title&quot;:&quot;Jawwy TV Live&quot;,&quot;channelNumber&quot;:1,&quot;locationId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Location/61157928362&quot;,&quot;categories&quot;:[&quot;Entertainment&quot;],&quot;subscriptionGuids&quot;:[&quot;BASE_SUBSCRIPTION&quot;,&quot;BASE_PLUS_SUBSCRIPTION&quot;]}],&quot;images&quot;:[{&quot;id&quot;:&quot;280x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626084994.jpeg&quot;,&quot;width&quot;:280,&quot;height&quot;:392},{&quot;id&quot;:&quot;1024x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626084994.jpeg&quot;,&quot;width&quot;:1024,&quot;height&quot;:392},{&quot;id&quot;:&quot;640x487&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626084994.jpeg&quot;,&quot;width&quot;:640,&quot;height&quot;:487},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626084994.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626084994.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626084994.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626084994.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626084994.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626084994.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586}]},{&quot;promotionId&quot;:&quot;Bharti Episode b2b2c&quot;,&quot;orderId&quot;:54,&quot;promoArea&quot;:[&quot;home:main&quot;],&quot;promoType&quot;:&quot;EPISODE&quot;,&quot;showPrice&quot;:true,&quot;showText&quot;:true,&quot;localizedTexts&quot;:{&quot;ar&quot;:[&quot;Bharti Episode b2b2c&quot;,&quot; &quot;],&quot;en&quot;:[&quot;Bharti Episode b2b2c&quot;,&quot; &quot;]},&quot;properties&quot;:[{&quot;year&quot;:&quot;2007&quot;,&quot;programType&quot;:&quot;episode&quot;,&quot;currency&quot;:&quot;SAR&quot;,&quot;programAvailabilityId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/215535143960&quot;,&quot;rating&quot;:{&quot;scheme&quot;:&quot;urn:www.citc.gov.sa&quot;,&quot;rating&quot;:&quot;18&quot;},&quot;categories&quot;:[&quot;Arabic&quot;,&quot;GADM&quot;,&quot;Series&quot;],&quot;seriesId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Program/guid/2702652773/079_INT-INTIGRAL-SERIES-S0009594&quot;,&quot;seasonNumber&quot;:1,&quot;seriesPaId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/215440424268&quot;,&quot;genre&quot;:[&quot;Drama&quot;],&quot;programDescription&quot;:{&quot;ar&quot;:&quot;&#1605;&#1606; &#1576;&#1591;&#1608;&#1604;&#1577; &#1589;&#1604;&#1575;&#1581; &#1575;&#1604;&#1587;&#1593;&#1583;&#1606;&#1610; &#1608;&#1576;&#1608;&#1587;&#1610; &#1608;&#1593;&#1576;&#1583; &#1575;&#1604;&#1585;&#1581;&#1605;&#1606; &#1571;&#1576;&#1608; &#1586;&#1607;&#1585;&#1577; &#1608;&#1603;&#1608;&#1603;&#1576;&#1577; &#1605;&#1606; &#1606;&#1580;&#1608;&#1605; &#1575;&#1604;&#1583;&#1585;&#1575;&#1605;&#1575; &#1575;&#1604;&#1605;&#1589;&#1585;&#1610;&#1577;&#1548; &#1610;&#1604;&#1602;&#1610; &#1607;&#1584;&#1575; &#1575;&#1604;&#1605;&#1587;&#1604;&#1587;&#1604; &#1575;&#1604;&#1580;&#1585;&#1610;&#1569; &#1606;&#1592;&#1585;&#1577; &#1579;&#1575;&#1602;&#1576;&#1577; &#1593;&#1604;&#1609; &#1581;&#1585;&#1576; &#1575;&#1604;&#1571;&#1610;&#1575;&#1605; &#1575;&#1604;&#1587;&#1578;&#1577; &#1593;&#1575;&#1605; 1967 &#1575;&#1604;&#1578;&#1610; &#1594;&#1610;&#1585;&#1578; &#1575;&#1604;&#1605;&#1588;&#1607;&#1583; &#1575;&#1604;&#1587;&#1610;&#1575;&#1587;&#1610; &#1601;&#1610; &#1575;&#1604;&#1588;&#1585;&#1602; &#1575;&#1604;&#1571;&#1608;&#1587;&#1591;.&quot;,&quot;en&quot;:&quot;Starring Salah E-Saadani, Busi and Abdel Rahman Abou Zahra, this gritty drama series takes an unflinching look at the 1967 Six-Day War that transformed the political landscape of the Middle East.&quot;},&quot;duration&quot;:&quot;2881&quot;,&quot;episodeNumber&quot;:28,&quot;seriesGuid&quot;:&quot;079_INT-INTIGRAL-SERIES-S0009594&quot;}],&quot;images&quot;:[{&quot;id&quot;:&quot;280x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626085396.jpeg&quot;,&quot;width&quot;:280,&quot;height&quot;:392},{&quot;id&quot;:&quot;1024x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626085396.jpeg&quot;,&quot;width&quot;:1024,&quot;height&quot;:392},{&quot;id&quot;:&quot;640x487&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626085396.jpeg&quot;,&quot;width&quot;:640,&quot;height&quot;:487},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626085396.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626085396.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626085396.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626085396.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626085396.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626085397.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586}]},{&quot;promotionId&quot;:&quot;Bharti season b2b&quot;,&quot;orderId&quot;:55,&quot;promoArea&quot;:[&quot;home:main&quot;],&quot;promoType&quot;:&quot;SEASON&quot;,&quot;showPrice&quot;:true,&quot;showText&quot;:true,&quot;localizedTexts&quot;:{&quot;ar&quot;:[&quot;Bharti season b2b&quot;,&quot; &quot;,&quot; &quot;],&quot;en&quot;:[&quot;Bharti season b2b&quot;,&quot; &quot;,&quot; &quot;]},&quot;properties&quot;:[{&quot;rating&quot;:{&quot;scheme&quot;:&quot;urn:www.citc.gov.sa&quot;,&quot;rating&quot;:&quot;Family&quot;},&quot;guid&quot;:&quot;048_INT-INTIGRAL-SEASON-S0008770004&quot;,&quot;updated&quot;:1626081083000,&quot;title&quot;:&quot;Karameesh Kids Songs, S04&quot;,&quot;seasonId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/TvSeason/215440424274&quot;,&quot;seriesId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Program/guid/2702652773/048_INT-INTIGRAL-SERIES-S0008770&quot;,&quot;seasonNumber&quot;:4,&quot;seriesPaId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/141522984065&quot;,&quot;noOfEpisodes&quot;:13,&quot;seriesGuid&quot;:&quot;048_INT-INTIGRAL-SERIES-S0008770&quot;,&quot;firstEpisodeId&quot;:&quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/215531560417&quot;}],&quot;images&quot;:[{&quot;id&quot;:&quot;280x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626101030.jpeg&quot;,&quot;width&quot;:280,&quot;height&quot;:392},{&quot;id&quot;:&quot;1024x392&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626101030.jpeg&quot;,&quot;width&quot;:1024,&quot;height&quot;:392},{&quot;id&quot;:&quot;640x487&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626101030.jpeg&quot;,&quot;width&quot;:640,&quot;height&quot;:487},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626101030.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626101030.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626101030.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;1920x1080&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626101030.jpeg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626101030.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586},{&quot;id&quot;:&quot;396x586&quot;,&quot;url&quot;:&quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626101030.jpeg&quot;,&quot;width&quot;:396,&quot;height&quot;:586}]}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.022</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:19:05.920 [print] {
+  &quot;promotions&quot;: [
+    {
+      &quot;promotionId&quot;: &quot;sabe movie for b2b&quot;,
+      &quot;orderId&quot;: 32,
+      &quot;promoArea&quot;: [
+        &quot;home:main&quot;
+      ],
+      &quot;promoType&quot;: &quot;VOD&quot;,
+      &quot;showPrice&quot;: false,
+      &quot;showText&quot;: false,
+      &quot;localizedTexts&quot;: {
+        &quot;ar&quot;: [
+          &quot;Sabe movie&quot;,
+          &quot; &quot;,
+          &quot; &quot;
+        ],
+        &quot;en&quot;: [
+          &quot;Sabe movie&quot;,
+          &quot; &quot;,
+          &quot; &quot;
+        ]
+      },
+      &quot;properties&quot;: [
+        {
+          &quot;year&quot;: &quot;2019&quot;,
+          &quot;programType&quot;: &quot;movie&quot;,
+          &quot;currency&quot;: &quot;SAR&quot;,
+          &quot;programAvailabilityId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/192005160233&quot;,
+          &quot;rating&quot;: {
+            &quot;scheme&quot;: &quot;urn:www.citc.gov.sa&quot;,
+            &quot;rating&quot;: &quot;15&quot;
+          },
+          &quot;categories&quot;: [
+            &quot;GADM&quot;,
+            &quot;Movies&quot;
+          ],
+          &quot;genre&quot;: [
+            &quot;Comedy&quot;
+          ],
+          &quot;programDescription&quot;: {
+            &quot;ar&quot;: &quot;&#1601;&#1610;&#1604;&#1605; &#1603;&#1608;&#1605;&#1610;&#1583;&#1610; &#1575;&#1580;&#1578;&#1605;&#1575;&#1593;&#1610;. &#1610;&#1593;&#1602;&#1583; &#1593;&#1605;&#1585; &#1608;&#1606;&#1587;&#1605;&#1577; &#1602;&#1585;&#1575;&#1606;&#1607;&#1605;&#1575; &#1585;&#1594;&#1605; &#1575;&#1587;&#1578;&#1606;&#1603;&#1575;&#1585; &#1593;&#1575;&#1574;&#1604;&#1578;&#1610;&#1607;&#1605;&#1575;&#1548; &#1604;&#1603;&#1606; &#1578;&#1602;&#1593; &#1575;&#1604;&#1605;&#1571;&#1587;&#1575;&#1577; &#1581;&#1610;&#1606; &#1610;&#1607;&#1575;&#1580;&#1605; &#1605;&#1587;&#1604;&#1581;&#1608;&#1606; &#1575;&#1604;&#1593;&#1585;&#1608;&#1587;&#1614;&#1610;&#1606;. &#1607;&#1604; &#1610;&#1605;&#1603;&#1606; &#1604;&#1604;&#1586;&#1608;&#1580;&#1610;&#1606; &#1575;&#1604;&#1582;&#1585;&#1608;&#1580; &#1587;&#1575;&#1604;&#1616;&#1605;&#1614;&#1610;&#1606; &#1605;&#1606; &#1575;&#1604;&#1589;&#1583;&#1605;&#1577;&#1567; &#1571;&#1605; &#1571;&#1606; &#1575;&#1585;&#1578;&#1576;&#1575;&#1591;&#1607;&#1605;&#1575; &#1605;&#1581;&#1603;&#1608;&#1605; &#1593;&#1604;&#1610;&#1607; &#1576;&#1575;&#1604;&#1582;&#1610;&#1576;&#1577; &#1608;&#1575;&#1604;&#1601;&#1588;&#1604;&#1567;&quot;,
+            &quot;en&quot;: &quot;Comedy. Despite the disapproval of their families, Omar and Nesma tie the knot but tragedy strikes when armed assailants attack the newlyweds. Can the couple emerge unscathed from the trauma or is their union doomed?&quot;
+          },
+          &quot;duration&quot;: &quot;5382&quot;
+        }
+      ],
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: &quot;280x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1618394942.jpeg&quot;,
+          &quot;width&quot;: 280,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;1024x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1618394942.jpeg&quot;,
+          &quot;width&quot;: 1024,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;640x487&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1618394942.jpeg&quot;,
+          &quot;width&quot;: 640,
+          &quot;height&quot;: 487
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1618394942.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1618394942.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1618394942.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1618394942.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;1272x440&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1618394942.png&quot;,
+          &quot;width&quot;: 1272,
+          &quot;height&quot;: 440
+        },
+        {
+          &quot;id&quot;: &quot;1272x440&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1618394943.png&quot;,
+          &quot;width&quot;: 1272,
+          &quot;height&quot;: 440
+        }
+      ]
+    },
+    {
+      &quot;promotionId&quot;: &quot;Bharti Rewind b2b&quot;,
+      &quot;orderId&quot;: 50,
+      &quot;promoArea&quot;: [
+        &quot;home:main&quot;
+      ],
+      &quot;promoType&quot;: &quot;REWIND&quot;,
+      &quot;showPrice&quot;: true,
+      &quot;showText&quot;: true,
+      &quot;localizedTexts&quot;: {
+        &quot;ar&quot;: [
+          &quot;Bharti Rewind b2b2c&quot;,
+          &quot; &quot;
+        ],
+        &quot;en&quot;: [
+          &quot;Bharti Rewind b2b2c&quot;,
+          &quot; &quot;
+        ]
+      },
+      &quot;properties&quot;: [
+        {
+          &quot;channelId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Channel/97776168178&quot;,
+          &quot;stationId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Station/97775656356&quot;,
+          &quot;price&quot;: &quot;Free&quot;,
+          &quot;currency&quot;: &quot;USD&quot;,
+          &quot;programAvailabilityId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/103781928279&quot;,
+          &quot;rating&quot;: {
+            &quot;scheme&quot;: &quot;urn:www.citc.gov.sa&quot;,
+            &quot;rating&quot;: &quot;family&quot;
+          },
+          &quot;startTime&quot;: 1643014140000,
+          &quot;endTime&quot;: 1643015640000,
+          &quot;listingId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Listing/257112103956&quot;,
+          &quot;channelNumber&quot;: 171,
+          &quot;channelTitle&quot;: &quot;La3ab Wa Jad&quot;,
+          &quot;programTitle&quot;: {
+            &quot;ar&quot;: &quot;&#1605;&#1575;&#1585;&#1603;&#1608; &#1576;&#1608;&#1604;&#1608;&quot;,
+            &quot;en&quot;: &quot;The Travels of the Young Marco Polo&quot;
+          },
+          &quot;type&quot;: &quot;LINEAR&quot;
+        }
+      ],
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: &quot;280x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626078725.jpeg&quot;,
+          &quot;width&quot;: 280,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;1024x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626078725.jpeg&quot;,
+          &quot;width&quot;: 1024,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;640x487&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626078725.jpeg&quot;,
+          &quot;width&quot;: 640,
+          &quot;height&quot;: 487
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626078725.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626078725.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626078725.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626078725.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626078725.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626078725.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        }
+      ]
+    },
+    {
+      &quot;promotionId&quot;: &quot;Bharti subscription b2b&quot;,
+      &quot;orderId&quot;: 52,
+      &quot;promoArea&quot;: [
+        &quot;home:main&quot;
+      ],
+      &quot;promoType&quot;: &quot;SUBSCRIPTION&quot;,
+      &quot;showPrice&quot;: true,
+      &quot;showText&quot;: true,
+      &quot;localizedTexts&quot;: {
+        &quot;ar&quot;: [
+          &quot;Bharti subscription b2b2c&quot;,
+          &quot; &quot;
+        ],
+        &quot;en&quot;: [
+          &quot;Bharti subscription b2b2c&quot;,
+          &quot; &quot;
+        ]
+      },
+      &quot;properties&quot;: [
+        {
+          &quot;price&quot;: &quot;28.00&quot;,
+          &quot;currency&quot;: &quot;SAR&quot;,
+          &quot;subscriptionGuid&quot;: &quot;BASE_SUBSCRIPTION&quot;
+        }
+      ],
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: &quot;280x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626078795.jpeg&quot;,
+          &quot;width&quot;: 280,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;1024x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626078795.jpeg&quot;,
+          &quot;width&quot;: 1024,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;640x487&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626078795.jpeg&quot;,
+          &quot;width&quot;: 640,
+          &quot;height&quot;: 487
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626078795.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626078795.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626078795.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626078795.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626078795.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626078795.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        }
+      ]
+    },
+    {
+      &quot;promotionId&quot;: &quot;Bharti channel b2b&quot;,
+      &quot;orderId&quot;: 53,
+      &quot;promoArea&quot;: [
+        &quot;home:main&quot;
+      ],
+      &quot;promoType&quot;: &quot;CHANNEL&quot;,
+      &quot;showPrice&quot;: true,
+      &quot;showText&quot;: true,
+      &quot;localizedTexts&quot;: {
+        &quot;ar&quot;: [
+          &quot;Bharti Arabic b2b&quot;,
+          &quot; &quot;,
+          &quot; &quot;
+        ],
+        &quot;en&quot;: [
+          &quot;Bharti Arabic b2b2c&quot;,
+          &quot; &quot;
+        ]
+      },
+      &quot;properties&quot;: [
+        {
+          &quot;channelId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Channel/132941864273&quot;,
+          &quot;guid&quot;: &quot;JAW1_KSA&quot;,
+          &quot;updated&quot;: 1632895945000,
+          &quot;title&quot;: &quot;Jawwy TV Live&quot;,
+          &quot;channelNumber&quot;: 1,
+          &quot;locationId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Location/61157928362&quot;,
+          &quot;categories&quot;: [
+            &quot;Entertainment&quot;
+          ],
+          &quot;subscriptionGuids&quot;: [
+            &quot;BASE_SUBSCRIPTION&quot;,
+            &quot;BASE_PLUS_SUBSCRIPTION&quot;
+          ]
+        }
+      ],
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: &quot;280x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626084994.jpeg&quot;,
+          &quot;width&quot;: 280,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;1024x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626084994.jpeg&quot;,
+          &quot;width&quot;: 1024,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;640x487&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626084994.jpeg&quot;,
+          &quot;width&quot;: 640,
+          &quot;height&quot;: 487
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626084994.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626084994.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626084994.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626084994.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626084994.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626084994.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        }
+      ]
+    },
+    {
+      &quot;promotionId&quot;: &quot;Bharti Episode b2b2c&quot;,
+      &quot;orderId&quot;: 54,
+      &quot;promoArea&quot;: [
+        &quot;home:main&quot;
+      ],
+      &quot;promoType&quot;: &quot;EPISODE&quot;,
+      &quot;showPrice&quot;: true,
+      &quot;showText&quot;: true,
+      &quot;localizedTexts&quot;: {
+        &quot;ar&quot;: [
+          &quot;Bharti Episode b2b2c&quot;,
+          &quot; &quot;
+        ],
+        &quot;en&quot;: [
+          &quot;Bharti Episode b2b2c&quot;,
+          &quot; &quot;
+        ]
+      },
+      &quot;properties&quot;: [
+        {
+          &quot;year&quot;: &quot;2007&quot;,
+          &quot;programType&quot;: &quot;episode&quot;,
+          &quot;currency&quot;: &quot;SAR&quot;,
+          &quot;programAvailabilityId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/215535143960&quot;,
+          &quot;rating&quot;: {
+            &quot;scheme&quot;: &quot;urn:www.citc.gov.sa&quot;,
+            &quot;rating&quot;: &quot;18&quot;
+          },
+          &quot;categories&quot;: [
+            &quot;Arabic&quot;,
+            &quot;GADM&quot;,
+            &quot;Series&quot;
+          ],
+          &quot;seriesId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Program/guid/2702652773/079_INT-INTIGRAL-SERIES-S0009594&quot;,
+          &quot;seasonNumber&quot;: 1,
+          &quot;seriesPaId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/215440424268&quot;,
+          &quot;genre&quot;: [
+            &quot;Drama&quot;
+          ],
+          &quot;programDescription&quot;: {
+            &quot;ar&quot;: &quot;&#1605;&#1606; &#1576;&#1591;&#1608;&#1604;&#1577; &#1589;&#1604;&#1575;&#1581; &#1575;&#1604;&#1587;&#1593;&#1583;&#1606;&#1610; &#1608;&#1576;&#1608;&#1587;&#1610; &#1608;&#1593;&#1576;&#1583; &#1575;&#1604;&#1585;&#1581;&#1605;&#1606; &#1571;&#1576;&#1608; &#1586;&#1607;&#1585;&#1577; &#1608;&#1603;&#1608;&#1603;&#1576;&#1577; &#1605;&#1606; &#1606;&#1580;&#1608;&#1605; &#1575;&#1604;&#1583;&#1585;&#1575;&#1605;&#1575; &#1575;&#1604;&#1605;&#1589;&#1585;&#1610;&#1577;&#1548; &#1610;&#1604;&#1602;&#1610; &#1607;&#1584;&#1575; &#1575;&#1604;&#1605;&#1587;&#1604;&#1587;&#1604; &#1575;&#1604;&#1580;&#1585;&#1610;&#1569; &#1606;&#1592;&#1585;&#1577; &#1579;&#1575;&#1602;&#1576;&#1577; &#1593;&#1604;&#1609; &#1581;&#1585;&#1576; &#1575;&#1604;&#1571;&#1610;&#1575;&#1605; &#1575;&#1604;&#1587;&#1578;&#1577; &#1593;&#1575;&#1605; 1967 &#1575;&#1604;&#1578;&#1610; &#1594;&#1610;&#1585;&#1578; &#1575;&#1604;&#1605;&#1588;&#1607;&#1583; &#1575;&#1604;&#1587;&#1610;&#1575;&#1587;&#1610; &#1601;&#1610; &#1575;&#1604;&#1588;&#1585;&#1602; &#1575;&#1604;&#1571;&#1608;&#1587;&#1591;.&quot;,
+            &quot;en&quot;: &quot;Starring Salah E-Saadani, Busi and Abdel Rahman Abou Zahra, this gritty drama series takes an unflinching look at the 1967 Six-Day War that transformed the political landscape of the Middle East.&quot;
+          },
+          &quot;duration&quot;: &quot;2881&quot;,
+          &quot;episodeNumber&quot;: 28,
+          &quot;seriesGuid&quot;: &quot;079_INT-INTIGRAL-SERIES-S0009594&quot;
+        }
+      ],
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: &quot;280x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626085396.jpeg&quot;,
+          &quot;width&quot;: 280,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;1024x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626085396.jpeg&quot;,
+          &quot;width&quot;: 1024,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;640x487&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626085396.jpeg&quot;,
+          &quot;width&quot;: 640,
+          &quot;height&quot;: 487
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626085396.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626085396.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626085396.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626085396.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626085396.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626085397.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        }
+      ]
+    },
+    {
+      &quot;promotionId&quot;: &quot;Bharti season b2b&quot;,
+      &quot;orderId&quot;: 55,
+      &quot;promoArea&quot;: [
+        &quot;home:main&quot;
+      ],
+      &quot;promoType&quot;: &quot;SEASON&quot;,
+      &quot;showPrice&quot;: true,
+      &quot;showText&quot;: true,
+      &quot;localizedTexts&quot;: {
+        &quot;ar&quot;: [
+          &quot;Bharti season b2b&quot;,
+          &quot; &quot;,
+          &quot; &quot;
+        ],
+        &quot;en&quot;: [
+          &quot;Bharti season b2b&quot;,
+          &quot; &quot;,
+          &quot; &quot;
+        ]
+      },
+      &quot;properties&quot;: [
+        {
+          &quot;rating&quot;: {
+            &quot;scheme&quot;: &quot;urn:www.citc.gov.sa&quot;,
+            &quot;rating&quot;: &quot;Family&quot;
+          },
+          &quot;guid&quot;: &quot;048_INT-INTIGRAL-SEASON-S0008770004&quot;,
+          &quot;updated&quot;: 1626081083000,
+          &quot;title&quot;: &quot;Karameesh Kids Songs, S04&quot;,
+          &quot;seasonId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/TvSeason/215440424274&quot;,
+          &quot;seriesId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/Program/guid/2702652773/048_INT-INTIGRAL-SERIES-S0008770&quot;,
+          &quot;seasonNumber&quot;: 4,
+          &quot;seriesPaId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/141522984065&quot;,
+          &quot;noOfEpisodes&quot;: 13,
+          &quot;seriesGuid&quot;: &quot;048_INT-INTIGRAL-SERIES-S0008770&quot;,
+          &quot;firstEpisodeId&quot;: &quot;http://data.entertainment.tv.theplatform.eu/entertainment/data/ProgramAvailability/215531560417&quot;
+        }
+      ],
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: &quot;280x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/main/main_1626101030.jpeg&quot;,
+          &quot;width&quot;: 280,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;1024x392&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/tablet/tablet_1626101030.jpeg&quot;,
+          &quot;width&quot;: 1024,
+          &quot;height&quot;: 392
+        },
+        {
+          &quot;id&quot;: &quot;640x487&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/mobile/mobile_1626101030.jpeg&quot;,
+          &quot;width&quot;: 640,
+          &quot;height&quot;: 487
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/weblandscape/weblandscape_1626101030.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webportrait/webportrait_1626101030.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_en/webcp_en_1626101030.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;1920x1080&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_ar/webcp_ar_1626101030.jpeg&quot;,
+          &quot;width&quot;: 1920,
+          &quot;height&quot;: 1080
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_en/webcp_logo_en_1626101030.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        },
+        {
+          &quot;id&quot;: &quot;396x586&quot;,
+          &quot;url&quot;: &quot;https://s3-eu-west-1.amazonaws.com/image.wt/Promotions/webcp_logo_ar/webcp_logo_ar_1626101030.jpeg&quot;,
+          &quot;width&quot;: 396,
+          &quot;height&quot;: 586
+        }
+      ]
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.promotions.length == 6</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[0].promotionId == '#string'</span>
+
+  <span class="lead-duration duration">0.029</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[0].orderId == '#number'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[1].promoType == 'REWIND'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def children = $response[*].promotions[*].promoArea[*]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def schema = { &quot;home&quot;: &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match each children == schema</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[0].showPrice == false</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[0].showText == false</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.promotions[0].localizedTexts.ar[0].length == 10</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def localizedTextsValue =</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>{
+  &quot;ar&quot;: [
+   &quot;Sabe movie&quot;,
+    &quot; &quot;,
+   &quot; &quot;
+   ],
+&quot;en&quot;: [
+&quot;Sabe movie&quot;,
+&quot; &quot;,
+     &quot; &quot;
+   ]
+  }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[0].localizedTexts == localizedTextsValue</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def localizedTextResponse = response.promotions[0].localizedTexts</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def array = [{ar: 'Sabe movie'},{ar: ''},{ar: ''}]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match each array contains</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>{
+      ar : '#string'
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[*].localizedTexts.ar[0] contains '#string'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[*].localizedTexts.en[0] contains '#string'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[*].localizedTexts[*] contains []</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def programType = 'movie'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def programType1 = 'episode'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def list = ['episode','movie']</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def data = karate.mapWithKey(list, 'programType')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match data == [{ programType: 'episode' }, { programType: 'movie' }]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[0].properties[0].programType == programType</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.promotions[4].properties[0].programType == programType1</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
