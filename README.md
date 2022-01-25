@@ -1,6 +1,6 @@
-# popcorn
+# popcorn.net
 
-This project is build with Karate Framework
+This API project is build with Karate Framework
 
 #karate libraries 
 #Java
